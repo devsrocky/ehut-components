@@ -1,0 +1,108 @@
+/* GLOBAL CLASSES */
+.enabled{
+    opacity: 1;
+    visibility: visible;
+}
+.disabled{
+    opacity: 0;
+    visibility: hidden;
+}
+.none{
+    pointer-events: none;
+}
+
+.tr_delay {
+    transition: opacity 0.3s ease-in-out, 
+    visibility 0s ease 0.3s;
+}
+
+/* Navigation */
+
+header{
+    width: 100%;
+    background: rgb(251, 212, 0);
+}
+.ehut-navigation{
+    justify-content: space-between;
+    /* min-width: 1050px; */
+    width: 1050px;
+    margin: 0 auto;
+    height: 70px;
+}
+.ehut-navigation a{
+    width: 10%;
+}
+.ehut-navigation-menu-search{
+    width: 70%;
+    height: 48px;
+    display: flex;
+    border: 1px solid #212529;
+    padding: 2px 2px;
+    border-radius: 25px;
+    position: relative;
+}
+.ehut-navigation-menu-search button {
+    z-index: 1;
+    border-radius: 25px;
+    width: 85px;
+  }
+.ehut-navigation-menu-search input{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background: transparent;
+    border-style: none;
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+}
+.ehut-navigation-menu-search input:focus{
+    background: transparent;
+}
+.ehut-navigation-menu-search .search_icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ehut-navigation-menu-search .send{
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.ehut-navigation .tools{
+    width: 20%;
+    justify-content: space-between;
+}
+.ehut-navigation .tools .svg,  .ehut-navigation-menu-search .search_icon{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* APP MENU FOR SM DEVICE */
+.ehut-app-bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: rgb(251, 212, 0);
+}
+.appMenu{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+.appMenu a{
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+}
+.appMenu a svg{
+    font-size: 25px;
+    color: #212529;
+}
+.appMenu a .active{
+    color: #fff;
+}

@@ -1,0 +1,35 @@
+
+@media(max-width: 768px){
+
+    .switch-icon{
+        display: none;
+    }
+    .mobile-tools{
+        display: block;
+    }
+    .ehut-navigation-menu-search {
+        height: 44px;
+    }
+    .ehut-navigation-menu-search button {
+        width: 70px;
+        height: 90%;
+        font-size: 15px;
+        position: absolute;
+        top: 50%;
+        left: 2px;
+        transform: translateY(-50%);
+      }
+      .ehut-tools div {
+        display: block !important;
+        background: #FFFFFF;
+        width: 35px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 50%;
+      }
+      .ehut-tools div .svg{
+        color: #24050d;
+      }
+
+}

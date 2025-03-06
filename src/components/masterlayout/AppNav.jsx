@@ -6,7 +6,7 @@ const AppNav = () => {
     return (
         <div className='ehut-app-bottom'>
           <div className="appMenu d-flex justify-content-between align-items-center">
-            <Link to='https://google.com'>
+            <Link to='https://google.com' className='active'>
                 <HouseDoor className="mx-2 active"/>
             </Link>
             <Link>

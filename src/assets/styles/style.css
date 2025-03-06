@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800&family=Oswald:wght@700&family=Poppins:wght@800&family=Archivo+Black&family=Raleway:wght@800&display=swap');
+
+:root{
+    --EhutHeader: linear-gradient(90deg, #0b3e27, #197149);
+    --primary: #0b3e27;
+    --secondary: #24050d;
+    --thirdClr: #ffe200;
+    --inputBackgr: #FFFFFF;
+    --placeholder: #888888;
+    --focusBackgr: #FFFFFF;
+    --focusColor: #212529bf;
+    --white: #FFFFFF;
+}
+div{
+    color: #fff;
+}
+
 /* GLOBAL CLASSES */
 .enabled{
     opacity: 1;
@@ -15,50 +32,156 @@
     transition: opacity 0.3s ease-in-out, 
     visibility 0s ease 0.3s;
 }
+.inMiddle{
+    display: flex;
+    align-items: center;
+}
+.switch-icon{
+    display: block;
+}
+.mobile-tools{
+    display: none;
+}
+.cart-loader-screen{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.cart-loader{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    background: #ececec;
+    overflow: hidden;
+}
+.cart{
+    width: 50px;
+    height: 50px;
+    background: url('../images/shopping-cart.png') center no-repeat;
+    background-size: cover;
+}
+.cart{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    /* animation: jumpCart .8s infinite ease;
+    animation-delay: 2s; */
+}
+/* @keyframes jumpCart{
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    40%{
+        transform: translate(-50%, -50%) rotate(-10deg);
+    }
+    80%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+} */
+.product-icons {
+    position: absolute;
+    left: 49%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+  }
+.cart-area .product{
+    position: absolute;
+    margin-top: 5px;
+    width: 25px;
+    height: 25px;
+    line-height: 20px;
+    opacity: 0;
+    animation: getIn 2s infinite ease-in-out;
+    z-index: 1;
+}
+
+
+
+
+@keyframes getIn {
+    0%{
+        transform: translateY(-60px)  scale(1);
+        opacity: 0;
+    }
+    30%{
+        transform: translateY(-20px)  scale(1.1);
+        opacity: 0;
+    }
+    70%{
+        transform: translateY(35px)  scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(40px) scale(0);
+        opacity: 1;
+    }
+}
 
 /* Navigation */
-
 header{
     width: 100%;
-    background: rgb(251, 212, 0);
+    background: var(--EhutHeader);
 }
 .ehut-navigation{
-    justify-content: space-between;
-    /* min-width: 1050px; */
-    width: 1050px;
-    margin: 0 auto;
-    height: 70px;
+    height: 75px;
 }
-.ehut-navigation a{
-    width: 10%;
-}
-.ehut-navigation-menu-search{
-    width: 70%;
+.ehut-logo {
+    width: 90%;
+    box-shadow: 15px 15px 35px rgba(36, 5, 13, 0.18);
+  }
+
+.ehut-navigation-menu-search {
+    width: 100%;
     height: 48px;
     display: flex;
-    border: 1px solid #212529;
+    border: 1px solid #21252940;
     padding: 2px 2px;
     border-radius: 25px;
     position: relative;
-}
+  }
 .ehut-navigation-menu-search button {
     z-index: 1;
     border-radius: 25px;
     width: 85px;
+    border-style: none;
+    background: var(--secondary);
+    color: var(--white);
+    &:hover{
+        background: var(--secondary);
+        opacity: 0.9;
+    }
   }
 .ehut-navigation-menu-search input{
     position: absolute;
     content: '';
     top: 0;
     left: 0;
-    background: transparent;
+    background: var(--inputBackgr);
+    color: var(--placeholder);
     border-style: none;
     border-radius: 25px;
     width: 100%;
     height: 100%;
+    font-size: 18px;
 }
 .ehut-navigation-menu-search input:focus{
-    background: transparent;
+    background: var(--focusBackgr);
+    color: var(--focusColor);
+}
+.ehut-navigation-menu-search input::placeholder{
+    color: #21252940;
+}
+.icon-bg svg{
+    color: var(--secondary) !important;
 }
 .ehut-navigation-menu-search .search_icon {
     position: absolute;
@@ -71,14 +194,19 @@ header{
     transform: translateY(-50%) rotate(45deg);
 }
 
-.ehut-navigation .tools{
-    width: 20%;
-    justify-content: space-between;
-}
-.ehut-navigation .tools .svg,  .ehut-navigation-menu-search .search_icon{
+.ehut-tools svg, .ehut-navigation-menu-search .search_icon{
     font-size: 24px;
     cursor: pointer;
+    color: #FFFFFF;
 }
+.ehut-tools{
+    width: 100%;
+    justify-content: space-between;
+}
+.ehut-tools svg {
+    font-size: 24px !important;
+    margin: 0 !important;
+  }
 
 /* APP MENU FOR SM DEVICE */
 .ehut-app-bottom{
@@ -87,22 +215,72 @@ header{
     left: 0;
     width: 100%;
     height: 50px;
-    background: rgb(251, 212, 0);
 }
+/* .ehut-app-bottom::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background: #eff4f2;
+} */
 .appMenu{
     width: 90%;
     height: 100%;
     margin: 0 auto;
 }
-.appMenu a{
+.appMenu a {
+    position: relative;
+    z-index: 1;
     height: 100%;
-    line-height: 50px;
+    line-height: 45px;
     text-align: center;
-}
+    background: #0b3e270d;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.11);
+  }
+
 .appMenu a svg{
-    font-size: 25px;
-    color: #212529;
+    font-size: 22px;
+    color: var(--secondary);
 }
-.appMenu a .active{
-    color: #fff;
+.appMenu a:hover{
+    color: var(--thirdClr);
+}
+
+.appMenu .active{
+    background: var(--EhutHeader);
+}
+
+.appMenu .active svg{
+    color: var(--white);
+
+}
+.appMenu .active::after {
+    position: absolute;
+    content: '';
+    top: -22px;
+    left: 50%;
+    width: 30%;
+    height: 30%;
+    transform: translateX(-50%);
+    background: #15623f;
+    border-radius: 50%;
+    z-index: -1;
+    box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.11);
+    animation: upDown 2s linear infinite;
+}
+
+@keyframes upDown{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
 }

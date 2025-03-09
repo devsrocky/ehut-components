@@ -1,26 +1,43 @@
 
 @media(max-width: 768px){
 
+    /* BOOTSTRAP SM WIDTH */
+    .w95{
+      width: 95% !important;
+    }
+
+
+    .switch-appMenu{
+      display: block;
+    }
     .switch-icon{
-        display: none;
+        display: none !important;
     }
     .mobile-tools{
         display: block;
+    }
+    .mobile-dropdown{
+      display: block;
+      cursor: pointer;
     }
     .ehut-navigation-menu-search {
         height: 44px;
     }
     .ehut-navigation-menu-search button {
-        width: 70px;
-        height: 90%;
-        font-size: 15px;
-        position: absolute;
-        top: 50%;
-        left: 2px;
-        transform: translateY(-50%);
-      }
+      width: 70px;
+      height: 80%;
+      font-size: 15px;
+      position: absolute;
+      top: 48%;
+      left: 3px;
+      transform: translateY(-53%);
+    }
+    .ehut-navigation-menu-search button svg {
+      left: 1px !important;
+      top: -1px;
+    }
       .ehut-tools div {
-        display: block !important;
+
         background: #FFFFFF;
         width: 35px;
         height: 40px;
@@ -30,6 +47,39 @@
       }
       .ehut-tools div .svg{
         color: #24050d;
+        font-size: 20px !important;
       }
+
+      /* NAVIGATION SEARCH PART */
+      .ehut-navigation-menu-search input {
+        height: 95%;
+      }
+      .icon-bg svg{
+        font-size: 20px !important;
+      }
+
+      /* LOADER ANIMATION  */
+      .bag {
+        width: 80px;
+        height: 100px;
+        &::before{
+          width: 42px;
+          height: 38px;
+          top: -20px;
+          left: 20px;
+        }
+      }
+      .letter {
+        font-size: 20px;
+      }
+
+
+}
+
+@media (min-width: 576px) {
+  /* BOOTSTRAP SM WIDTH */
+  .w95{
+    width: 95% !important;
+  }
 
 }

@@ -5,6 +5,7 @@ import Logo from '../../../public/ehut-logo-40x100.png';
 import { BsFillCaretDownFill } from 'react-icons/bs';
 import Menu from '../elements/Menu';
 import { BiMinus, BiPlus } from 'react-icons/bi';
+import ThemeMenu from './ThemeMenu';
 
 const Navigation = () => {
 
@@ -156,11 +157,16 @@ const Navigation = () => {
                         </div>
                         <div className='mobile-dropdown'><BsFillCaretDownFill className="mx-2 svg dBlock" /></div>
                       </div>
+
+
+
                   </div>
+
 
                 </div>
               </div>
           </nav >
+          <ThemeMenu/>
       </header>
 
   );

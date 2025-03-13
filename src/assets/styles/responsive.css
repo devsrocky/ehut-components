@@ -73,6 +73,29 @@
         font-size: 20px;
       }
 
+      /* FOOTER  */
+      .ehut-footer-bottom {
+        padding-bottom: 70px !important;
+      }
+      .footer-svg-title span{
+        display: none;
+      }
+      .footer-title {
+        margin: 16px 0px;
+      }
+      .ehut-footer-bottom-icons {
+        justify-content: center;
+        margin-bottom: 5px;
+      }
+      .powaredBy {
+        font-size: 12px;
+        text-align: center;
+        width: 100%;
+        text-decoration: underline;
+      }
+
+      
+
 
 }
 

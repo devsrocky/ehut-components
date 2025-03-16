@@ -93,9 +93,26 @@
         width: 100%;
         text-decoration: underline;
       }
-
-      
-
+      .text-box {
+        align-items: center;
+      }
+      .text-box p {
+        text-align: center !important;
+      }
+      .ehut-banner-ads {
+        margin-top: 15px;
+      }
+      .ehut-product-grid img {
+        height: 200px !important;
+      }
+      .ehut-product-grid .icons {
+        width: 60%;
+        top: 0px;
+      }
+      .ehut-product-grid P {
+        position: relative;
+        top: 8px;
+      }
 
 }
 

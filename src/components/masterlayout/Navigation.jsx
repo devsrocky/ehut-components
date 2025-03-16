@@ -5,15 +5,21 @@ import Logo from '../../../public/ehut-logo-40x100.png';
 import { BsFillCaretDownFill } from 'react-icons/bs';
 import Menu from '../elements/Menu';
 import { BiMinus, BiPlus } from 'react-icons/bi';
-import ThemeMenu from './ThemeMenu';
+import ThemeMenu from './ThemeMenu'
+
 
 const Navigation = () => {
 
 
   let sendRef, searchRef, buttonRef, inputRef, refBiPlus, refBiMinus = useRef()
-  const  menuRef = useRef(null)
+  const SearchMenuRef = useRef(null)
+
 
   const  [isMenuVisible, setMenuVisible] = useState( false)
+
+
+  const [isThemeMenuVisible, setThemeMenuVisible] = useState(false);
+  const themeMenuRef = useRef(null)
 
 
   const OnSearchIcon = () => {
@@ -92,6 +98,42 @@ const Navigation = () => {
 
   }
 
+  const ThemeMenuHandler = (event) => {
+    // const sun = sunIcon.current;
+    const icon = event.target;
+    event.stopPropagation();
+    setThemeMenuVisible(!isThemeMenuVisible)
+
+    if(isThemeMenuVisible === false){
+      icon.style.opacity = 0.5;
+    }else{
+      icon.style.opacity = 1;
+    }
+
+  }
+
+  // Close ThemeMenu if clicked outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (!inputRef.contains(event.target)) {
+        const sendIcon = sendRef;
+        const searchIcon = searchRef;
+        const button = buttonRef;
+        const input = inputRef;
+
+        sendIcon.classList.add('disabled')
+        searchIcon.classList.remove('disabled')
+        button.classList.remove('disabled')
+        input.style.paddingLeft = '95px'
+      }
+
+    };
+
+    document.addEventListener('click', handleClickOutside);
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
 
 
   const   iconStyle = {
@@ -122,7 +164,7 @@ const Navigation = () => {
                         <BiMinus ref={(BiMinus) => refBiMinus=BiMinus} className="mx-2 svg M0 tr_delay d-none" style={iconStyle} />
                       </button>
 
-                      {isMenuVisible && <div ><Menu/></div> }
+                      {isMenuVisible && <div ref={SearchMenuRef}><Menu/></div> }
 
 
                       <Form inline className="mx-auto d-flex align-items-center" style={{ flex: 1 }}>
@@ -142,8 +184,8 @@ const Navigation = () => {
                   <div className="col-xl-2 col-lg-2 col-md-2 col-sm-1 col-1 P0 inMiddle ">
                       <div className="ehut-tools d-flex  justify-content-end">
                         <div style={{position: 'relative'}} className='switch-icon'>
-                          {/* <Sun className="mx-2 svg switch-icon"/> */}
-                          EN
+                          <Sun onClick={ThemeMenuHandler}  className="mx-2 svg switch-icon"/>
+                          {/* EN */}
                         </div>
                         <Person onClick={OnUser} className="mx-2 svg switch-icon" />
                         <div style={{position: 'relative'}} className='switch-icon'>
@@ -155,7 +197,7 @@ const Navigation = () => {
                           <span className='counter position-absolute '>10</span>
 
                         </div>
-                        <div className='mobile-dropdown'><BsFillCaretDownFill className="mx-2 svg dBlock" /></div>
+                        <div onClick={ThemeMenuHandler} className='mobile-dropdown'><BsFillCaretDownFill className="mx-2 svg dBlock" /></div>
                       </div>
 
 
@@ -166,7 +208,13 @@ const Navigation = () => {
                 </div>
               </div>
           </nav >
-          <ThemeMenu/>
+
+          {isThemeMenuVisible && (
+        <div ref={themeMenuRef}>
+          <ThemeMenu />
+        </div>
+      )}
+
       </header>
 
   );

@@ -11,7 +11,7 @@ const ThemeToggle = () => {
   };
 
   return (
-    <div className="theme-toggle-container">
+    <div className="theme-toggle-container d-flex justify-content-end">
       <div className={`theme-toggle ${isDarkMode ? "dark" : "light"}`} onClick={toggleTheme}>
         <div className="toggle-circle">
           {isDarkMode ? <MoonFill size={18} color="white" /> : <SunFill  size={18} color="yellow" />}

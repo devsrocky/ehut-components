@@ -11,8 +11,8 @@ const Menu = () => {
 
 
     return (
-        <div style={{zIndex: '1010'}}>
-            <div className="menu-links navbar-nav moveUpward5 tr3">
+        <div >
+            <div className="menu-links navbar-nav moveUpward5 tr3" style={{zIndex: '1010'}} >
                 <Link className='nav-item moveUpward3 nav-link active tr3'  style={style}>Home</Link>
                 <Link className='nav-item moveUpward3 nav-link tr3' style={style}>Shop</Link>
             </div>

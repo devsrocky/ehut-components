@@ -3876,7 +3876,7 @@ textarea.form-control-lg {
 }
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
   isolation: isolate;
-  border-color: var(--bs-nav-tabs-link-hover-border-color);
+  /* border-color: var(--bs-nav-tabs-link-hover-border-color); */
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
@@ -6175,7 +6175,7 @@ textarea.form-control-lg {
   margin-left: 3px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #fff;
+  background-color: var(--thirdClr);
   background-clip: padding-box;
   border: 0;
   border-top: 10px solid transparent;

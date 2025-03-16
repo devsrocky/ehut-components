@@ -1,32 +1,32 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import { OpenEhutLoader } from '../../redux/states/settingSlice';
 import store from '../../redux/store/store';
+import Spacer from '../../components/drivers/Spacer';
+import ProductGrid from '../../components/product/ProductGrid';
+import ReviewTitle from '../../components/home/ReviewTitle';
+import Reviews from '../../components/elements/Reviews';
+const BannerSection = lazy(() => import('../../components/home/BannerSection'))
+const ProductTabSection = lazy(() => import('../../components/home/ProductTabSection'))
+
+
+
 const HomePage = () => {
-
-    const Loader = () => {
-        
-        store.dispatch(OpenEhutLoader())
-
-    }
 
     return (
         <div>
             
 
-            <h1>Ehut shopping</h1>
-            <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quia. Vel ratione laboriosam blanditiis mollitia, sequi praesentium animi ad suscipit debitis libero. Esse, voluptate. Non magni praesentium fugiat accusamus fugit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quia. Vel ratione laboriosam blanditiis mollitia, sequi praesentium animi ad suscipit debitis libero. Esse, voluptate. Non magni praesentium fugiat accusamus fugit.
+            <BannerSection/>
+            <Spacer Space={50} />
+            <ProductTabSection/>
+            <Spacer Space={50} />
+            <ProductGrid/>
+            <Spacer Space={50} />
+            <ReviewTitle/>
+            <Spacer Space={50} />
+            <Reviews/>
 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quia. Vel ratione laboriosam blanditiis mollitia, sequi praesentium animi ad suscipit debitis libero. Esse, voluptate. Non magni praesentium fugiat accusamus fugit.
 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quia. Vel ratione laboriosam blanditiis mollitia, sequi praesentium animi ad suscipit debitis libero. Esse, voluptate. Non magni praesentium fugiat accusamus fugit.
-
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quia. Vel ratione laboriosam blanditiis mollitia, sequi praesentium animi ad suscipit debitis libero. Esse, voluptate. Non magni praesentium fugiat accusamus fugit.
-
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quia. Vel ratione laboriosam blanditiis mollitia, sequi praesentium animi ad suscipit debitis libero. Esse, voluptate. Non magni praesentium fugiat accusamus fugit.
-            </p>
-
-            <button onClick={Loader}>show loader</button>
 
         </div>
     );

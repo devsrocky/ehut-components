@@ -113,6 +113,9 @@
         position: relative;
         top: 8px;
       }
+      .review-product-img img {
+        height: 150px;
+      }
 
 }
 

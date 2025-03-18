@@ -5,6 +5,7 @@ import Spacer from '../../components/drivers/Spacer';
 import ProductGrid from '../../components/product/ProductGrid';
 import ReviewTitle from '../../components/home/ReviewTitle';
 import Reviews from '../../components/elements/Reviews';
+import FeedbackSection from '../../components/home/FeedbackSection';
 const BannerSection = lazy(() => import('../../components/home/BannerSection'))
 const ProductTabSection = lazy(() => import('../../components/home/ProductTabSection'))
 
@@ -24,7 +25,9 @@ const HomePage = () => {
             <Spacer Space={50} />
             <ReviewTitle/>
             <Spacer Space={50} />
-            <Reviews/>
+            <FeedbackSection/>
+            <Spacer Space={50} />
+
 
 
 

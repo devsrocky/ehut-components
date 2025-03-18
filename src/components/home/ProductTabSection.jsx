@@ -12,7 +12,7 @@ const ProductTabSection = () => {
 
                 <div className="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"><h2 className='title'>Products</h2></div>
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <Tabs defaultActiveKey="profile" id="fill-tab-example" className="mb-3" fill>
+                    <Tabs defaultActiveKey="All" id="fill-tab-example" className="mb-3" fill>
 
                         <Tab eventKey="All" title="All"></Tab>
                         <Tab eventKey="Men" title="Men"></Tab>

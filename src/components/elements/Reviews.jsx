@@ -4,53 +4,120 @@ import thumbnail from '../../assets/images/product.jpg'
 const Reviews = () => {
     return (
         <Fragment>
-             <div className='container pad-0'>
-            <div className='row'>
-                <div className='review-section gradi-border'>
-                    <div className='review-summary'>
-                        <h3 className='text-gradi'>Total reviews 100+</h3>
-                        <div className='summary-item'>
-                            <span>My communication level</span>
-                            <div className='stars blend-text'>★★★★★</div>
-                            <span className='rating'>4.9</span>
-                        </div>
-                        <div className='summary-item'>
-                            <span>My communication level</span>
-                            <div className='stars blend-text'>★★★★★</div>
-                            <span className='rating'>4.9</span>
-                        </div>
-                        <div className='summary-item'>
-                            <span>My communication level</span>
-                            <div className='stars blend-text'>★★★★★</div>
-                            <span className='rating'>4.9</span>
-                        </div>
+             <div className='ehut-feedback p-3'>
 
-                    </div>
-
-                    <div className='review-list'>
-                        <div className='review-card'>
-                                    <div className='review-header'>
-                                        <img src={thumbnail} alt="client" className='avatar'/>
-                                        <div className='reviewer-details'>
-                                            <h4 className='text-gradi'>Rocky prodhan</h4>
-                                            <span className="country">Bangladesh</span>
-                                        </div>
-                                    </div>
-
-                            <div className='review-content'>
-                                <div className='stars blend-text'>5</div>
-                                    <span className='time'>
-                                        <strong>On last: </strong>
-                                        May 01 2025
-                                    </span>
-                                    <p>The product really awsome ehut is the best ecommerce vendor</p>
+                <div className='row d-flex'>
+                    <div className='col-xl-10 col-lg-10 col-md-10 col-sm-8 col-8 review-card'>
+                            <div className="review-user-details d-flex align-items-center">
+                                <img src={thumbnail} alt="user" className='user-profile'/>
+                                <div className="">
+                                    <h3 className='user-name P0'>Username</h3>
+                                    <span className='card-sub-title'>Country</span>
+                                </div>
                             </div>
-                        </div>
+                            <div className="review-feedback">
+                                <div className='d-flex justify-content-between align-items-center'>
+                                    <span className='review-star'>★★★★★ <strong>5</strong></span> •  <span className='review-date'> 1 Day ago</span>
+                                </div>
+                                <div className="devider"></div>
+                                <p className='feedback'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi pariatur at esse fuga vitae deleniti accusamus! Itaque, quisquam. Magni</p>
+                            </div>
+                    </div>
+                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 review-product-img d-flex justify-content-center align-items-center">
+                        <img src={thumbnail} alt="thumb" />
                     </div>
                 </div>
-            </div>
 
-        </div>
+                <div className='row d-flex'>
+                    <div className='col-xl-10 col-lg-10 col-md-10 col-sm-8 col-8 review-card'>
+                            <div className="review-user-details d-flex align-items-center">
+                                <img src={thumbnail} alt="user" className='user-profile'/>
+                                <div className="">
+                                    <h3 className='user-name P0'>Username</h3>
+                                    <span className='card-sub-title'>Country</span>
+                                </div>
+                            </div>
+                            <div className="review-feedback">
+                                <div className='d-flex justify-content-between align-items-center'>
+                                    <span className='review-star'>★★★★★ <strong>5</strong></span> •  <span className='review-date'> 1 Day ago</span>
+                                </div>
+                                <div className="devider"></div>
+                                <p className='feedback'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi pariatur at esse fuga vitae deleniti accusamus! Itaque, quisquam. Magni</p>
+                            </div>
+                    </div>
+                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 review-product-img d-flex justify-content-center align-items-center">
+                        <img src={thumbnail} alt="thumb" />
+                    </div>
+                </div>
+
+                <div className='row d-flex'>
+                    <div className='col-xl-10 col-lg-10 col-md-10 col-sm-8 col-8 review-card'>
+                            <div className="review-user-details d-flex align-items-center">
+                                <img src={thumbnail} alt="user" className='user-profile'/>
+                                <div className="">
+                                    <h3 className='user-name P0'>Username</h3>
+                                    <span className='card-sub-title'>Country</span>
+                                </div>
+                            </div>
+                            <div className="review-feedback">
+                                <div className='d-flex justify-content-between align-items-center'>
+                                    <span className='review-star'>★★★★★ <strong>5</strong></span> •  <span className='review-date'> 1 Day ago</span>
+                                </div>
+                                <div className="devider"></div>
+                                <p className='feedback'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi pariatur at esse fuga vitae deleniti accusamus! Itaque, quisquam. Magni</p>
+                            </div>
+                    </div>
+                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 review-product-img d-flex justify-content-center align-items-center">
+                        <img src={thumbnail} alt="thumb" />
+                    </div>
+                </div>
+
+                <div className='row d-flex'>
+                    <div className='col-xl-10 col-lg-10 col-md-10 col-sm-8 col-8 review-card'>
+                            <div className="review-user-details d-flex align-items-center">
+                                <img src={thumbnail} alt="user" className='user-profile'/>
+                                <div className="">
+                                    <h3 className='user-name P0'>Username</h3>
+                                    <span className='card-sub-title'>Country</span>
+                                </div>
+                            </div>
+                            <div className="review-feedback">
+                                <div className='d-flex justify-content-between align-items-center'>
+                                    <span className='review-star'>★★★★★ <strong>5</strong></span> •  <span className='review-date'> 1 Day ago</span>
+                                </div>
+                                <div className="devider"></div>
+                                <p className='feedback'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi pariatur at esse fuga vitae deleniti accusamus! Itaque, quisquam. Magni</p>
+                            </div>
+                    </div>
+                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 review-product-img d-flex justify-content-center align-items-center">
+                        <img src={thumbnail} alt="thumb" />
+                    </div>
+                </div>
+
+                <div className='row d-flex'>
+                    <div className='col-xl-10 col-lg-10 col-md-10 col-sm-8 col-8 review-card'>
+                            <div className="review-user-details d-flex align-items-center">
+                                <img src={thumbnail} alt="user" className='user-profile'/>
+                                <div className="">
+                                    <h3 className='user-name P0'>Username</h3>
+                                    <span className='card-sub-title'>Country</span>
+                                </div>
+                            </div>
+                            <div className="review-feedback">
+                                <div className='d-flex justify-content-between align-items-center'>
+                                    <span className='review-star'>★★★★★ <strong>5</strong></span> •  <span className='review-date'> 1 Day ago</span>
+                                </div>
+                                <div className="devider"></div>
+                                <p className='feedback'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi pariatur at esse fuga vitae deleniti accusamus! Itaque, quisquam. Magni</p>
+                            </div>
+                    </div>
+                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 review-product-img d-flex justify-content-center align-items-center">
+                        <img src={thumbnail} alt="thumb" />
+                    </div>
+                </div>
+
+
+            </div>
         </Fragment>
     );
 };

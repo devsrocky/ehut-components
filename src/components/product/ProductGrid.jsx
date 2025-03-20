@@ -182,17 +182,17 @@ const ProductGrid = () => {
 
                 </div>
 
-                <div className="row py-5">
+                <div className="row pt-5">
                     <div className="col-12 d-flex justify-content-center align-items-center">
                     <ReactPaginate
-                            previousLabel="<"
-                            nextLabel=">"
+                            previousLabel="Prev"
+                            nextLabel="Next"
                             pageClassName="shadow-box linkSize"
                             pageLinkClassName="shadow-box linkSize"
-                            previousClassName="shadow-box linkSize"
-                            previousLinkClassName="shadow-box linkSize"
-                            nextClassName="shadow-box linkSize"
-                            nextLinkClassName="shadow-box linkSize"
+                            previousClassName="shadow-box"
+                            previousLinkClassName="shadow-box "
+                            nextClassName="shadow-box "
+                            nextLinkClassName="shadow-box "
                             breakLabel="..."
                             breakClassName="shadow-box linkSize"
                             breakLinkClassName="shadow-box linkSize"

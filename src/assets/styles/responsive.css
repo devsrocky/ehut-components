@@ -2,6 +2,19 @@
 @media(max-width: 768px){
 
     /* BOOTSTRAP SM WIDTH */
+    .responsive-center{
+      text-align: center;
+    }
+    .mob-visi{
+      display: block;
+    }
+    .mob-hide{
+      display: none !important;
+    }
+    .sm-flex-space{
+      display: flex;
+      justify-content: space-between;
+    }
     .w95{
       width: 95% !important;
     }
@@ -72,6 +85,21 @@
       .letter {
         font-size: 20px;
       }
+      .news-grid h2 {
+        font-size: 13px;
+        line-height: 20px;
+      }
+      .news-grid {
+        padding: 0px 5px;
+      }
+
+      .ehut-fassion-carousel a {
+        height: 35px;
+        width: 100%;
+        padding: 0px !important;
+        line-height: 35px !important;
+        text-align: center;
+      }
 
       /* FOOTER  */
       .ehut-footer-bottom {
@@ -116,6 +144,29 @@
       .review-product-img img {
         height: 150px;
       }
+      .newsletter-shape {
+        padding: 50px 30px;
+      }
+      .newsletter-shape::after {
+        width: 93%;
+        height: 90%;
+      }
+      .subcribe {
+        width: 100%;
+      }
+      .subcribe .input{
+        width: 60%;
+      }
+      .subcribe button{
+        width: 40%;
+      }
+      .ehut-newsletter p {
+        width: 100%;
+      }
+      .ehut-news .gridx{
+        grid-template-columns: repeat(2, 1fr);
+      }
+
 
 }
 

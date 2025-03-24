@@ -2,12 +2,10 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 
-// custom external css
-
-import '../src/assets/styles/bootstrap.css'
-import '../src/assets/styles/style.css'
-import '../src/assets/styles/responsive.css'
-
+import './assets/styles/bootstrap.css'
+import './assets/styles/style.css'
+import './assets/styles/responsive.css'
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 
 

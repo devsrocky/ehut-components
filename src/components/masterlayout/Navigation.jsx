@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Navbar, Nav, Form, FormControl, Button, Alert } from 'react-bootstrap';
 import { Search, Sun, Person, Heart, Cart, Send } from 'react-bootstrap-icons';
-import Logo from '../../../public/ehut-logo-40x100.png';
+import Logo from '/ehut-logo-40x100.png';
 import { BsFillCaretDownFill } from 'react-icons/bs';
 import Menu from '../elements/Menu';
 import { BiMinus, BiPlus } from 'react-icons/bi';

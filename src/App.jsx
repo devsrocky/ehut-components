@@ -6,6 +6,7 @@ import EhutLoading from "./components/loader/EhutLoading";
 import { Provider } from "react-redux";
 import store from "./redux/store/store";
 import ShopPage from "./pages/in/ShopPage";
+import SingleProduct from "./pages/in/SingleProduct";
 
 
 
@@ -20,6 +21,7 @@ const App = () => {
 
           <Route exact path="/" element={<HomePage />} />
           <Route exact path="/shop" element={<ShopPage />} />
+          <Route exact path="/product" element={<SingleProduct />} />
 
         </Routes>
 

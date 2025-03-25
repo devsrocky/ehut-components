@@ -1,17 +1,17 @@
-import React, { Fragment } from 'react';
-import product from '../../assets/images/product.jpg'
-import { Link } from 'react-router-dom';
+import React from 'react';
 import { Cart, Eye, Heart } from 'react-bootstrap-icons';
+import { Link } from 'react-router-dom';
+import product from '../../assets/images/product.jpg'
 import ReactPaginate from 'react-paginate';
-import Spacer from '../drivers/Spacer';
 
-const ProductGrid = () => {
+
+const ProductGrid3 = () => {
     return (
-        <Fragment>
-            <div className="container ehut-product-grid">
-                <div className="row g-4">
-                    <div className="col-xl-2 col-lg-2 col-md-3 col-sm-5 col-6 ">
-                        <Link className="card tr3" to="/product">
+        <div className='container ehut-product-grid'>
+            <div className="row row g-4">
+
+                <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6">
+                    <Link  className="card tr3" to="/product">
                             <img src={product} alt="ehut" className='card-img-top' />
                             <div className='icons d-flex justify-content-center'>
                                 {/* Replace Link with buttons or divs for actions */}
@@ -24,11 +24,10 @@ const ProductGrid = () => {
                                 <p className="card-title text-center P0">Black soft t-shirt</p>
                                 <span><del><sup>৳</sup>500</del> <sup>৳</sup>499</span>
                             </div>
-                        </Link>
-                    </div>
-
-                    <div className="col-xl-2 col-lg-2 col-md-3 col-sm-5 col-6 ">
-                        <Link className="card tr3" to="/product">
+                    </Link>
+                </div>
+                <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6">
+                    <Link className="card tr3" to="/product">
                             <img src={product} alt="ehut" className='card-img-top' />
                             <div className='icons d-flex justify-content-center'>
                                 {/* Replace Link with buttons or divs for actions */}
@@ -41,11 +40,10 @@ const ProductGrid = () => {
                                 <p className="card-title text-center P0">Black soft t-shirt</p>
                                 <span><del><sup>৳</sup>500</del> <sup>৳</sup>499</span>
                             </div>
-                        </Link>
-                    </div>
-
-                    <div className="col-xl-2 col-lg-2 col-md-3 col-sm-5 col-6 ">
-                        <Link className="card tr3" to="/product">
+                    </Link>
+                </div>
+                <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6">
+                    <Link className="card tr3" to="/product">
                             <img src={product} alt="ehut" className='card-img-top' />
                             <div className='icons d-flex justify-content-center'>
                                 {/* Replace Link with buttons or divs for actions */}
@@ -58,11 +56,10 @@ const ProductGrid = () => {
                                 <p className="card-title text-center P0">Black soft t-shirt</p>
                                 <span><del><sup>৳</sup>500</del> <sup>৳</sup>499</span>
                             </div>
-                        </Link>
-                    </div>
-
-                    <div className="col-xl-2 col-lg-2 col-md-3 col-sm-5 col-6 ">
-                        <Link className="card tr3" to="/product">
+                    </Link>
+                </div>
+                <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6">
+                    <Link className="card tr3" to="/product">
                             <img src={product} alt="ehut" className='card-img-top' />
                             <div className='icons d-flex justify-content-center'>
                                 {/* Replace Link with buttons or divs for actions */}
@@ -75,11 +72,10 @@ const ProductGrid = () => {
                                 <p className="card-title text-center P0">Black soft t-shirt</p>
                                 <span><del><sup>৳</sup>500</del> <sup>৳</sup>499</span>
                             </div>
-                        </Link>
-                    </div>
-
-                    <div className="col-xl-2 col-lg-2 col-md-3 col-sm-5 col-6 ">
-                        <Link className="card tr3" to="/product">
+                    </Link>
+                </div>
+                <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6">
+                    <Link className="card tr3" to="/product">
                             <img src={product} alt="ehut" className='card-img-top' />
                             <div className='icons d-flex justify-content-center'>
                                 {/* Replace Link with buttons or divs for actions */}
@@ -92,11 +88,10 @@ const ProductGrid = () => {
                                 <p className="card-title text-center P0">Black soft t-shirt</p>
                                 <span><del><sup>৳</sup>500</del> <sup>৳</sup>499</span>
                             </div>
-                        </Link>
-                    </div>
-
-                    <div className="col-xl-2 col-lg-2 col-md-3 col-sm-5 col-6 ">
-                        <Link className="card tr3" to="/product">
+                    </Link>
+                </div>
+                <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6">
+                    <Link className="card tr3" to="/product">
                             <img src={product} alt="ehut" className='card-img-top' />
                             <div className='icons d-flex justify-content-center'>
                                 {/* Replace Link with buttons or divs for actions */}
@@ -109,11 +104,10 @@ const ProductGrid = () => {
                                 <p className="card-title text-center P0">Black soft t-shirt</p>
                                 <span><del><sup>৳</sup>500</del> <sup>৳</sup>499</span>
                             </div>
-                        </Link>
-                    </div>
-
-                    <div className="col-xl-2 col-lg-2 col-md-3 col-sm-5 col-6 ">
-                        <Link className="card tr3" to="/product">
+                    </Link>
+                </div>
+                <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6">
+                    <Link className="card tr3" to="/product">
                             <img src={product} alt="ehut" className='card-img-top' />
                             <div className='icons d-flex justify-content-center'>
                                 {/* Replace Link with buttons or divs for actions */}
@@ -126,11 +120,10 @@ const ProductGrid = () => {
                                 <p className="card-title text-center P0">Black soft t-shirt</p>
                                 <span><del><sup>৳</sup>500</del> <sup>৳</sup>499</span>
                             </div>
-                        </Link>
-                    </div>
-
-                    <div className="col-xl-2 col-lg-2 col-md-3 col-sm-5 col-6 ">
-                        <Link className="card tr3" to="/product">
+                    </Link>
+                </div>
+                <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6">
+                    <Link className="card tr3" to="/product">
                             <img src={product} alt="ehut" className='card-img-top' />
                             <div className='icons d-flex justify-content-center'>
                                 {/* Replace Link with buttons or divs for actions */}
@@ -143,11 +136,10 @@ const ProductGrid = () => {
                                 <p className="card-title text-center P0">Black soft t-shirt</p>
                                 <span><del><sup>৳</sup>500</del> <sup>৳</sup>499</span>
                             </div>
-                        </Link>
-                    </div>
-
-                    <div className="col-xl-2 col-lg-2 col-md-3 col-sm-5 col-6 ">
-                        <Link className="card tr3" to="/product">
+                    </Link>
+                </div>
+                <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6">
+                    <Link className="card tr3" to="/product">
                             <img src={product} alt="ehut" className='card-img-top' />
                             <div className='icons d-flex justify-content-center'>
                                 {/* Replace Link with buttons or divs for actions */}
@@ -160,30 +152,12 @@ const ProductGrid = () => {
                                 <p className="card-title text-center P0">Black soft t-shirt</p>
                                 <span><del><sup>৳</sup>500</del> <sup>৳</sup>499</span>
                             </div>
-                        </Link>
-                    </div>
-
-                    <div className="col-xl-2 col-lg-2 col-md-3 col-sm-5 col-6 ">
-                        <Link className="card tr3" to="/product">
-                            <img src={product} alt="ehut" className='card-img-top' />
-                            <div className='icons d-flex justify-content-center'>
-                                {/* Replace Link with buttons or divs for actions */}
-                                <button className="icon-btn "><Heart className="mx-2" /></button>
-                                <button className="icon-btn "><Cart className="mx-2" /></button>
-                                <button className="icon-btn "><Eye className="mx-2" /></button>
-                            </div>
-                            <div className="card-body d-flex flex-column align-items-center">
-                                <p className='card-sub-title'>Categories</p>
-                                <p className="card-title text-center P0">Black soft t-shirt</p>
-                                <span><del><sup>৳</sup>500</del> <sup>৳</sup>499</span>
-                            </div>
-                        </Link>
-                    </div>
-
+                    </Link>
                 </div>
 
-                <div className="row pt-5">
-                    <div className="col-12 d-flex justify-content-center align-items-center">
+            </div>
+            <div className="row pt-5">
+                <div className="col-12 d-flex justify-content-center align-items-center">
                     <ReactPaginate
                             previousLabel="Prev"
                             nextLabel="Next"
@@ -205,10 +179,8 @@ const ProductGrid = () => {
                          />
                     </div>
                 </div>
-
-            </div>
-        </Fragment>
+        </div>
     );
 };
 
-export default ProductGrid;
+export default ProductGrid3;

@@ -186,6 +186,9 @@
         visibility: visible;
         transform: translate(-50%, 0px) scale(1);
       }
+      .filterIcons {
+        margin-bottom: 10px;
+      }
 
 
 }

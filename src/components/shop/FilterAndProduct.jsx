@@ -6,6 +6,10 @@ import FilterBySize from '../drivers/FilterBySize';
 import FilterByColor from '../drivers/FilterByColor';
 import { Filter } from 'react-bootstrap-icons';
 import { MdShortcut } from 'react-icons/md';
+import ApplyFilter from '../elements/ApplyFilter';
+import CustomSelect from '../elements/SelectOptions';
+import ProductGrid from '../product/ProductGrid';
+import ProductGrid3 from '../product/ProductGrid3';
 
 const FilterAndProduct = () => {
 
@@ -36,14 +40,7 @@ const FilterAndProduct = () => {
                             <button onClick={FilterResponsiveHandler}> <Filter/> <span>Filter</span></button>
                             <div className='sort-by d-flex justify-content-between'>
                                 <span>sort by</span>
-                                <select>
-                                    <option value="default">DEFAULT</option>
-                                    <option value="default">Newness</option>
-                                    <option value="default">Popularity</option>
-                                    <option value="default">Avarage rating</option>
-                                    <option value="default">Lower to heigher</option>
-                                    <option value="default">Heigher to Lower</option>
-                                </select>
+                                <CustomSelect/>
                             </div>
                         </div>
                         <div ref={responsiveFilterRef} className="filter p-3">
@@ -53,16 +50,19 @@ const FilterAndProduct = () => {
                             </div>
                             <PriceRange/>
                             <Spacer Space={20} />
-                            <FilterByCategory/>
-                            <Spacer Space={20} />
+                            <FilterByCategory />
+                            <Spacer Space={15} />
                             <FilterBySize/>
-                            <Spacer Space={20} />
-                            <FilterByColor/>
+                            <Spacer Space={15} />
+                            <FilterByColor />
                             <Spacer Space={10} />
+                            <ApplyFilter />
+
+
                         </div>
                     </div>
                     <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
-                        Products
+                        <ProductGrid3/>
                     </div>
                 </div>
             </div>
